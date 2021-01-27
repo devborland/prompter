@@ -2,6 +2,8 @@ import 'dart:io';
 import 'option.dart';
 
 class Terminal {
+  const Terminal();
+
   void printPrompt(String prompt) {
     stdout.writeln(prompt);
   }
@@ -17,7 +19,7 @@ class Terminal {
       },
     );
     stdout.writeln('Enter a choice:');
-    stdout.write('>');
+    stdout.write('> ');
   }
 
   void clearScreen() {

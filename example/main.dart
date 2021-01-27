@@ -1,5 +1,4 @@
-import 'package:prompter/src/option.dart';
-import 'package:prompter/src/prompter.dart';
+import 'package:prompter/prompter.dart';
 
 void main() {
   final List<Option> options = [
@@ -9,5 +8,8 @@ void main() {
   ];
 
   final prompter = Prompter();
-  prompter.ask('What color do you want: ', options);
+  // final usersPick = prompter.askMultiple('What color do you want: ', options);
+  // print(usersPick);
+
+  print(prompter.askBinary('do you dead'));
 }
